@@ -4,3 +4,5 @@ create readme.md
 `git config user.email 'email'`
 committed using ui
 `git branch -M main` renamed branch
+`git add .` to add all files for commit
+`git commit` to commit selected files
