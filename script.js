@@ -3,11 +3,13 @@ const button = document.querySelector("button");
 const input = document.querySelector("#to_input");
 
 const submit_item = () => {
-  const new_item = input.value;
-  input.value = "";
-  items.push(new_item);
-  console.log({ new_item });
-  console.log({ items });
+  const new_item = input.value.trim();
+  if (new_item !== "") {
+    input.value = "";
+    items.push(new_item);
+    console.log({ new_item });
+    console.log({ items });
+  }
 };
 
 button.addEventListener(
