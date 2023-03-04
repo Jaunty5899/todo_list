@@ -12,12 +12,12 @@ const add_item = (item) => {
 </div>`;
   ul.appendChild(li);
   // party.confetti(this);
-  document.querySelector("#confetti").click();
   const trash_btn = document.querySelector(`.trash-${items.length}`);
   // console.log(trash_btn);
   trash_btn.addEventListener("click", (e) => {
     console.log(e.target);
     li.remove();
+    document.querySelector("#confetti").click();
   });
 };
 
