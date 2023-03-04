@@ -6,3 +6,4 @@ committed using ui
 `git branch -M main` renamed branch
 `git add .` to add all files for commit
 `git commit` to commit selected files
+`git push origin branch.name` to push changes
