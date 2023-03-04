@@ -1,0 +1,4 @@
+#confetti {
+  z-index: -111;
+  pointer-events: none;
+}
