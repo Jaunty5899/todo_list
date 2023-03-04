@@ -2,3 +2,10 @@
   z-index: -111;
   pointer-events: none;
 }
+li:not(.active):hover {
+  background-color: #adb5bd41;
+}
+
+.trash:hover {
+  color: var(--bs-danger);
+}

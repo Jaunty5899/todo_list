@@ -6,10 +6,19 @@ const add_item = (item) => {
   const ul = document.querySelector("ul");
   const li = document.createElement("li");
   li.classList.add("list-group-item");
-  li.innerText = item;
+  li.innerHTML = `<div class="d-flex justify-content-between">
+  <span>${item}</span
+  ><span class="trash trash-${items.length}"><i class="bi bi-trash3"></i></span>
+</div>`;
   ul.appendChild(li);
   // party.confetti(this);
   document.querySelector("#confetti").click();
+  const trash_btn = document.querySelector(`.trash-${items.length}`);
+  // console.log(trash_btn);
+  trash_btn.addEventListener("click", (e) => {
+    console.log(e.target);
+    li.remove();
+  });
 };
 
 const submit_item = () => {
